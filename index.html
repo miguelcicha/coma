@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+ 
+    var alumno = {
+        "nombre":"Juan",
+        "edad":18,
+        "notas":[8,5,9],
+        "secundarioCompleto":true,
+        "curso":{
+            "nombre":"PRogramacion fullstack nivel 2"
+        },
+        "fechaActual": new Date(),
+        "saludar": function(texto){
+            alert(texto);
+        }
+    };
+
+
+    alumno.saludar("esto lo quiero imp en el log");
+   
+
+    alert("La edad de "+alumno.nombre+" es:" + alumno.edad);
+
+    alert("Curso: "+ alumno.curso.nombre);
+
+    alert("Segunda nota: "+ alumno.notas[1]);
+
+    </script>
+</body>
+
+</html>
